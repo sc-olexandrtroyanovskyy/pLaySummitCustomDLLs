@@ -1,3 +1,6 @@
+#OLTR notes
+add custom dlls to bin folder, custom configs to app_config
+
 # Sitecore Platform Project
 
 This Visual Studio / MSBuild project is used to deploy code and configuration
