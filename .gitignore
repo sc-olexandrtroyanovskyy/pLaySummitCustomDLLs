@@ -31,7 +31,7 @@ Thumbs.db
 *.cache
 *.ilk
 *.log
-[Bb]in
+#[Bb]in
 # DEMO TEAM CUSTOMIZATION - For development environment hotfixes
 !docker/build/**/[Bb]in
 [Dd]ebug*/
