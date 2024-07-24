@@ -44,6 +44,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sitecore.JavaScriptServices.ViewEngine">
+      <HintPath>lib\Sitecore.JavaScriptServices.ViewEngine.dll</HintPath>
+	  <Private>False</Private>
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Reference>
     <Reference Include="Spe">
       <HintPath>lib\Spe.dll</HintPath>
       <Private>False</Private>
@@ -61,7 +66,6 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <!-- Remove the PackageReference for Sitecore.JavaScriptServices.ViewEngine -->
     <PackageReference Include="Sitecore.XmCloud.Kernel" />
     <PackageReference Include="Sitecore.XmCloud.ContentSearch" />
     <PackageReference Include="Sitecore.XmCloud.ContentSearch.Linq" />
@@ -69,8 +73,7 @@
     <PackageReference Include="Sitecore.XmCloud.Assemblies" />
     <PackageReference Include="Sitecore.Assemblies.SitecoreHeadlessServicesServer" />
     <PackageReference Include="Sitecore.Connector.CMP" />
-    <!-- Remove the conflicting PackageReference -->
-    <!-- <PackageReference Include="Sitecore.JavaScriptServices.ViewEngine" /> -->
+    <PackageReference Include="Sitecore.JavaScriptServices.ViewEngine" />
     <PackageReference Include="Sitecore.Services.GraphQL" />
     <PackageReference Include="Sitecore.Services.GraphQL.EdgeSchema" />
   </ItemGroup>
@@ -147,17 +150,6 @@
     <Compile Include="Utilities\Restart.aspx.designer.cs">
       <DependentUpon>Restart.aspx</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="lib\Sitecore.JavaScriptServices.ViewEngine.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Sitecore.JavaScriptServices.ViewEngine">
-      <HintPath>lib\Sitecore.JavaScriptServices.ViewEngine.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
