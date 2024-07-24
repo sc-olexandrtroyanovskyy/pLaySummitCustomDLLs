@@ -47,6 +47,7 @@
     <Reference Include="Sitecore.JavaScriptServices.ViewEngine">
       <HintPath>lib\Sitecore.JavaScriptServices.ViewEngine.dll</HintPath>
 	  <Private>False</Private>
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Reference>
     <Reference Include="Spe">
       <HintPath>lib\Spe.dll</HintPath>
