@@ -15,7 +15,7 @@
   -->
   <Target Name="ExcludeSitecoreAssemblies" AfterTargets="Compile">
     <ItemGroup>
-      <ExcludeFromPackageFiles Include="@(SitecoreAssemblies -> 'bin\%(Filename)%(Extension)')" />
+      <ExcludeFromPackageFiles Include="@(SitecoreAssemblies -> 'bin\%(Filename)%(Extension)')" Condition="'%(Filename)'!='Sitecore.JavaScriptServices.ViewEngine'"/>
       <ExcludeFromPackageFiles Include="@(SitecoreAssemblies -> 'bin\%(Filename).pdb')" />
       <ExcludeFromPackageFiles Include="@(SitecoreAssemblies -> 'bin\%(Filename).xml')" />
     </ItemGroup>
